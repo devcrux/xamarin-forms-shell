@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Shell.NavBarIsVisible="False"
+             x:Class="MeApp.Views.ProfilePage">
+
+    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Source="ProfilleImage.png" Aspect="Fill" HeightRequest="270" VerticalOptions="StartAndExpand"/>
+            <Image Source="menu.png" WidthRequest="23" HeightRequest="15" Margin="20,50" HorizontalOptions="Start" VerticalOptions="Start"/>
+            <Frame Grid.Row="1" HasShadow="True" CornerRadius="10" Margin="20,-50,20,0" Padding="18" HeightRequest="220" VerticalOptions="StartAndExpand">
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                        <Label Text="James Smith" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                        <Label Text="(Senior Software Engineer)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                        <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                            <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                            <Label Text="Los Angeles, California, US" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                            <Image Source="PhotoIcon.png" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center"/>
+                            <Label Text="Photography" TextColor="#2C3E50" FontSize="12" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                            <Image Source="Picnic.png" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center"/>
+                            <Label Text="Picnic" TextColor="#2C3E50" FontSize="12" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                            <Image Source="Binoculars.png" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center"/>
+                            <Label Text="Sightseeing" TextColor="#2C3E50" FontSize="12" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="2" HasShadow="True" HeightRequest="265" CornerRadius="10" Margin="20" Padding="18" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="About" FontSize="17" TextColor="#2C3E50"/>
+                    <Label Grid.Row="1" Text="I am a dedicated person with a family of four. I enjoy reading, and the knowledge and perspective that my reading gives me has strengthened my teaching skills and presentation abilities. I have been successful at raising a family, and I attribute this success to my ability to plan, schedule, and handle many different tasks at once. This flexibility will help me in the classroom, where there are many different personalities and learning styles." FontSize="14" TextColor="#707070"/>
+                </Grid>
+            </Frame>
+        </Grid>
+    </ScrollView>
+</ContentPage>
