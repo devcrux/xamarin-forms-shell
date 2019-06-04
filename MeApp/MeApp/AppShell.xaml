@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:views="clr-namespace:MeApp.Views"
              mc:Ignorable="d"
+             FlyoutHeaderBehavior="CollapseOnScroll"
              Shell.ItemTemplate="{StaticResource MenuTemplate}"
              Shell.MenuItemTemplate="{StaticResource MenuTemplate}"
              Shell.FlyoutHeaderTemplate="{StaticResource FlyoutHeaderTemplate}"
@@ -52,8 +53,8 @@
             <ShellContent ContentTemplate="{DataTemplate views:MorePage}"/>
         </Tab>
     </FlyoutItem>
-    <MenuItem Text="Photos" IconImageSource="photo.png"/>
-    <MenuItem Text="Articles" IconImageSource="article.png"/>
-    <MenuItem Text="Projects" IconImageSource="briefcase.png"/>
-    <MenuItem Text="Settins" IconImageSource="settings.png"/>
+    <MenuItem Text="Photos" Command="{Binding NavigateCommand}" CommandParameter="photos" IconImageSource="photo.png"/>
+    <MenuItem Text="Articles" Command="{Binding NavigateCommand}" CommandParameter="articles" IconImageSource="article.png"/>
+    <MenuItem Text="Projects" Command="{Binding NavigateCommand}" CommandParameter="projects" IconImageSource="briefcase.png"/>
+    <MenuItem Text="Settings" Command="{Binding SettingsCommand}" CommandParameter="settings" IconImageSource="settings.png"/>
 </Shell>

@@ -15,7 +15,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Image Source="ProfilleImage.png" Aspect="Fill" HeightRequest="270" VerticalOptions="StartAndExpand"/>
-            <Image Source="menu.png" WidthRequest="23" HeightRequest="15" Margin="20,50" HorizontalOptions="Start" VerticalOptions="Start"/>
+            <ImageButton Source="menu.png" WidthRequest="23" HeightRequest="15" Margin="20,50" HorizontalOptions="Start" VerticalOptions="Start" Clicked="ImageButton_Clicked"/>
             <Frame Grid.Row="1" HasShadow="True" CornerRadius="10" Margin="20,-50,20,0" Padding="18" HeightRequest="220" VerticalOptions="StartAndExpand">
                 <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     <Grid.RowDefinitions>

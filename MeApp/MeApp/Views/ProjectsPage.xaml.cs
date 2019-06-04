@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace MeApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ProfilePage : ContentPage
+    public partial class ProjectsPage : ContentPage
     {
-        public ProfilePage()
+        public ProjectsPage()
         {
             InitializeComponent();
-        }
-
-        private void ImageButton_Clicked(object sender, EventArgs e)
-        {
-            Shell.Current.FlyoutIsPresented = true;
         }
     }
 }
